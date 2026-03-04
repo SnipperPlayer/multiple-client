@@ -16,5 +16,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: "/multiple-client"
+  base: "/multiple-client/", //gh-pages
 })
