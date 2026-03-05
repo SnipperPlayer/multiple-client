@@ -14,6 +14,9 @@ function App() {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center gap-6 p-4 md:p-0">
+
+      <h1 className="text-2xl font-bold text-white mb-6">Multiple Project</h1>
+
       <div className="max-w-md w-full bg-gray-800 p-6 rounded-lg">
         <div className="text-white text-xl font-bold mb-4">Tip Calculator</div>
 
@@ -41,8 +44,9 @@ function App() {
         </div>
 
         <p className="text-white mt-4 text-lg">Tip: ${resultado.toFixed(2)}</p>
-        <p className="text-white mt-4 text-lg">Total: ${(Number(resultado)+ Number(monto)).toFixed(2)}</p>
+        <p className="text-white mt-4 text-lg">Total: ${(Number(resultado) + Number(monto)).toFixed(2)}</p>
       </div>
+
       <div className="max-w-md w-full bg-emerald-800 p-6 rounded-lg">
         <div className="text-white text-xl font-bold mb-4">Split Control</div>
         <input
@@ -56,6 +60,7 @@ function App() {
         <p className="text-white mt-4 text-lg">Daily Expenses: ${(Number(pay) * 0.30).toFixed(2)}</p>
         <p className="text-white mt-4 text-lg">Savings: ${(Number(pay) * 0.20).toFixed(2)}</p>
       </div>
+
     </div>
   );
 }
