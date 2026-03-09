@@ -13,9 +13,9 @@ function App() {
   const resultado = Number(monto) * Number(porcentaje) || 0; // Si monto no es un número, resultado será 0;
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center gap-6 p-4 md:p-0">
+    <div className="min-h-screen flex flex-col  items-center gap-6 p-4 md:p-0">
 
-      <h1 className="text-2xl font-bold text-white mb-6">Multiple Project</h1>
+      <h1 className="text-2xl font-bold text-white my-5">Multiple Project</h1>
 
       <div className="max-w-md w-full bg-gray-800 p-6 rounded-lg">
         <div className="text-white text-xl font-bold mb-4">Tip Calculator</div>
