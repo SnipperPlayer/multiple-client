@@ -5,7 +5,7 @@ import './App.css'
 
 function App() {
   const [monto, setMonto] = useState(""); // Guardamos el monto ingresado por el usuario
-  const [porcentaje, setPorcentaje] = useState(""); // Guardamos el factor (0.10 o 0.15)
+  const [porcentaje, setPorcentaje] = useState(0.15); // Guardamos el factor (0.10 o 0.15)
   const [pay, setPay] = useState("");
 
   // El resultado se calcula CADA VEZ que el componente se renderiza
@@ -37,9 +37,8 @@ function App() {
             onChange={(e) => setPorcentaje(Number(e.target.value))}
             className="p-2 rounded-md bg-gray-700 text-white"
           >
-            <option value="" hidden disabled>%</option>
-            <option value={0.10}>10%</option>
             <option value={0.15}>15%</option>
+            <option value={0.10}>10%</option>
           </select>
         </div>
 
